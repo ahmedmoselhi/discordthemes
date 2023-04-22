@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Themes - BetterDiscord</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta charset="utf-8" />
+<meta property="og:title" content="The Discord Enhancement Project">
+<meta property="og:description" content="BetterDiscord extends the functionality of DiscordApp by enhancing it with new features.">
+<meta property="og:url" content="">
+<meta property="og:image" content="/resources/branding/logo_solid.png">
+<meta property="og:image:alt" content="BetterDiscord Logo" />
+<meta name="description" content="BetterDiscord extends the functionality of DiscordApp by enhancing it with new features.">
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Discord Enhancement Project">
+<meta property="twitter:description" content="BetterDiscord extends the functionality of DiscordApp by enhancing it with new features.">
+<meta property="twitter:url" content="">
+<meta property="twitter:image" content="/resources/branding/logo_solid.png">
+<meta property="twitter:image:alt" content="BetterDiscord Logo" />
+<meta property="og:site_name" content="BetterDiscord">
+<meta property="twitter:site" content="BetterDiscord">
+<meta name="theme-color" content="#3a71c1">
+<meta name="keywords" content="Discord, BetterDiscord, Better Discord, Discord Mod, Discord Themes, Discord Plugins, Discord Extensions, Discord Client Mod, Discord Hacks">
+<meta name="author" content="BetterDiscord">
+<meta name="msapplication-TileColor" content="#3a71c1">
+<meta name="msapplication-TileImage" content="/resources/favicon/ms-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/resources/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/resources/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/resources/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/resources/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/resources/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/resources/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/resources/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/resources/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/resources/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+<link rel="manifest" href="/resources/favicon/manifest.json">
+<link rel="stylesheet" href="/css/normalize.css?v=FCbDC8zhJbOy_O5J4VcMX8fyFPqElXhlZ4RnreLLVhY" />
+<link rel="stylesheet" href="/css/site.css?v=saPql2lA2GVF25Txh0fIViEksvoXgL-u8n_xgB2mzyw" />
+<link rel="preload" as="font" type="font/woff2" href="/resources/fonts/Inter-Medium.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/resources/fonts/Inter-SemiBold.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="/resources/fonts/Inter-Bold.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff" href="/resources/fonts/Inter-Medium.woff" crossorigin />
+<link rel="preload" as="font" type="font/woff" href="/resources/fonts/Inter-SemiBold.woff" crossorigin />
+<link rel="preload" as="font" type="font/woff" href="/resources/fonts/Inter-Bold.woff" crossorigin />
+
+<script async data-ad-client="ca-pub-7911812397945020" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8L2S5QRZV"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-T8L2S5QRZV');
+    </script>
+
+
+<script src="https://hb.vntsm.com/v3/live/ad-manager.min.js" type="text/javascript" data-site-id="60f6fbf4bd5b6c54cf47a3c9" data-mode="scan" async></script>
+
+
+
+<script defer src="/js/vendor/tagify.min.js?v=O0tc3ecrkQDXM3S7L_mrYKOZND5TS1HbHLdik4dPDbk"></script>
+<script defer src="/js/vendor/OverlayScrollbars.min.js?v=n0i7FcM-m27Gjv187z9LgDy8SJjLF7kvBA_uzUsOIig"></script>
+<script defer src="/js/vendor/highlight.min.js?v=9BPhnQcUhR9kdOfuljJAjlisFG-9vmJ0cTS-ovo0FeA"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            hljs.initHighlightingOnLoad();
+        });
+    </script>
+<script>    window.Endpoints = {
+      store: {
+        addons: "https://api.betterdiscord.app/latest/store/addons",
+        themes: "https://api.betterdiscord.app/latest/store/themes",
+        plugins: "https://api.betterdiscord.app/latest/store/plugins",
+      },
+      moderation: {
+        verifyUser: "https://betterdiscord.app/latest/moderation/verify-user", // payload: userId
+      },
+      utils: {
+        deadAvatar: "https://api.betterdiscord.app/latest/utils/dead-avatar", // payload: oldAvatarUrl
+      }
+    };
+
+    function wrappedFetch(url, options) {
+      options.referrerPolicy = "strict-origin-when-cross-origin";
+      options.headers = Object.assign(Object(options.headers), {
+        "Content-Type": "application/json;charset=UTF-8"
+      });
+
+      // custom options field
+      if (options.payload) {
+        options.body = JSON.stringify(options.payload);
+      }
+      delete options.payload;
+
+      let abortController = new AbortController();
+      options.signal = abortController.signal;
+      let promise = (async () => {
+        try {
+          let response = await fetch(url, options);
+          let { status, statusText } = response;
+          if (200 <= status || status <= 299 || status === 301 || status === 302) {
+            return response;
+          }
+          throw new Error("back-end response: " + status + " " + statusText);
+        } catch (err) {
+          throw err;
+        }
+      })();
+      promise.abort = () => abortController.abort();
+      return promise;
+}
+
+    function wrapFetch(apiNamespace, endpointName, method, auth) {
+      const url = apiNamespace[endpointName];
+      Object.assign(apiNamespace, {
+        [endpointName](payload) {
+          return wrappedFetch(url, {
+            payload,
+            method,
+            credentials: auth && "include" || void 0
+          });
+        },
+      });
+    }
+
+    wrapFetch(Endpoints.store, "addons", "GET");
+    wrapFetch(Endpoints.store, "themes", "GET");
+    wrapFetch(Endpoints.store, "plugins", "GET");
+    wrapFetch(Endpoints.moderation, "verifyUser", "POST", true);
+    wrapFetch(Endpoints.utils, "deadAvatar", "PATCH");
+    </script>
+<script defer src="/js/site.js?v=scBxKIjsyF_GdGovfjAgeFsD3r0d7t9mKmSClZSU9A4"></script>
+
+<script type="text/javascript">
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setCookieDomain", "*.betterdiscord.app"]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "https://betterdiscord.app:8443/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript'; g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+
+</head>
+<body class="" style="height: auto;">
+
+<div class="vm-placement" data-id="60f82387ffc37172cbbc0201" style="display:none"></div>
+<div class="vm-placement" id="vm-av" data-format="isvideo"></div>
+
+<script src="/js/navbar.js?v=nATU-rxwW91S2c-Z7aPDTs9FBxMWgfYzstfal1Ti9gc" defer></script>
+<script>
+
+    async function avatarExpired(img) {
+        img.onerror = null;
+
+        img.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiAxNicgZmlsbD0nI2JmYzRjOScgd2lkdGg9JzE2JyBoZWlnaHQ9JzE2Jz48cGF0aCBmaWxsLXJ1bGU9J2V2ZW5vZGQnIGQ9J00xMC41IDVhMi41IDIuNSAwIDExLTUgMCAyLjUgMi41IDAgMDE1IDB6bS4wNjEgMy4wNzNhNCA0IDAgMTAtNS4xMjMgMCA2LjAwNCA2LjAwNCAwIDAwLTMuNDMxIDUuMTQyLjc1Ljc1IDAgMDAxLjQ5OC4wNyA0LjUgNC41IDAgMDE4Ljk5IDAgLjc1Ljc1IDAgMTAxLjQ5OC0uMDcgNi4wMDUgNi4wMDUgMCAwMC0zLjQzMi01LjE0MnonIHN0eWxlPScgdHJhbnNmb3JtOiBzY2FsZSguNSk7IHRyYW5zZm9ybS1vcmlnaW46IGNlbnRlcjsgJy8+PC9zdmc+';
+
+        try {
+            img.src = await Endpoints.utils.deadAvatar(img.src);
+        } catch (err) {
+        }
+    }
+</script>
+<header id="navbar" class="page-section flex-container align-center">
+<div class="page-section-inner">
+<a class="navbar-logo-container" href="/">
+<img loading="lazy" class="navbar-logo hide-mobile" src="/resources/branding/logo_large.svg" alt="BetterDiscord logo" />
+<img loading="lazy" class="navbar-logo small" src="/resources/branding/logo_small.svg" alt="BetterDiscord logo" />
+</a>
+<nav id="navbar-nav-items" class="flex-container align-center" data-toggle="affix">
+<a class="nav-item" href="/themes">Themes</a>
+<a class="nav-item" href="/plugins">Plugins</a>
+<a class="nav-item" href="/developers">Devs</a>
+<a class="nav-item" href="/merch">Merch</a>
+<a class="nav-item" target="_blank" href="https://docs.betterdiscord.app/">Docs</a>
+<form action="/auth/discord" method="post">
+<input type="hidden" name="ReturnUrl" value="/themes" />
+<button href="#" type="submit" class="btn btn-secondary">
+<svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" width="16" height="16">
+<path fill-rule="evenodd" d="M20.222 0c1.406 0 2.54 1.137 2.607 2.475V24l-2.677-2.273l-1.47-1.338l-1.604-1.398l.67 2.205H3.71c-1.402 0-2.54-1.065-2.54-2.476V2.48C1.17 1.142 2.31.003 3.715.003h16.5L20.222 0zm-6.118 5.683h-.03l-.202.2c2.073.6 3.076 1.537 3.076 1.537c-1.336-.668-2.54-1.002-3.744-1.137c-.87-.135-1.74-.064-2.475 0h-.2c-.47 0-1.47.2-2.81.735c-.467.203-.735.336-.735.336s1.002-1.002 3.21-1.537l-.135-.135s-1.672-.064-3.477 1.27c0 0-1.805 3.144-1.805 7.02c0 0 1 1.74 3.743 1.806c0 0 .4-.533.805-1.002c-1.54-.468-2.14-1.404-2.14-1.404s.134.066.335.2h.06c.03 0 .044.015.06.03v.006c.016.016.03.03.06.03c.33.136.66.27.93.4a8.18 8.18 0 0 0 1.8.536c.93.135 1.996.2 3.21 0c.6-.135 1.2-.267 1.8-.535c.39-.2.87-.4 1.397-.737c0 0-.6.936-2.205 1.404c.33.466.795 1 .795 1c2.744-.06 3.81-1.8 3.87-1.726c0-3.87-1.815-7.02-1.815-7.02c-1.635-1.214-3.165-1.26-3.435-1.26l.056-.02zm.168 4.413c.703 0 1.27.6 1.27 1.335c0 .74-.57 1.34-1.27 1.34c-.7 0-1.27-.6-1.27-1.334c.002-.74.573-1.338 1.27-1.338zm-4.543 0c.7 0 1.266.6 1.266 1.335c0 .74-.57 1.34-1.27 1.34c-.7 0-1.27-.6-1.27-1.334c0-.74.57-1.338 1.27-1.338z" />
+</svg>
+<span>Connect</span>
+</button>
+</form>
+</nav>
+</div>
+</header>
+<main id="main-page-content">
+<script src="/js/addons.js?v=UoYmi2jsbvca6z8GH085JoWf1mXUBjr_kqHb1G87Pts" defer></script>
+<script src="/js/load_addons.js?v=9J9AhwnXaW2wyClJuk9BqSV7pdEV9Y8iRhPnfqlt5Io" defer></script>
+<script src="/js/search.js?v=uAV8xfe7cdSmvXdTXWCygo30-hAsHPEvOfIeVzfPPV0"></script>
+<script>
+    const tags = ["flat","transparent","layout","customizable","fiction","nature","space","dark","light","game","anime","red","orange","green","purple","black","other","high-contrast","white","aqua","animated","yellow","blue","abstract"];
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Tagify
+        // GitHub: https://github.com/yairEO/tagify
+
+        let inputElm = document.querySelector('input[name=tags]');
+
+        if (inputElm) {
+            // initialize Tagify on the above input node reference
+            let tagify = new Tagify(inputElm, {
+                enforceWhitelist: true,
+                whitelist: tags,
+                maxTags: 5,
+                dropdown: {
+                    maxItems: tags.length,
+                    classname: "tags-look",
+                    enabled: 0,
+                    closeOnSelect: false
+                }
+            })
+            if (document.querySelector(".modal-content")) {
+                document.querySelector(".modal-content").addEventListener('scroll', function () {
+                    tagify.dropdown.position.call(tagify);
+                })
+            }
+        }
+    })
+</script>
+<section id="addons-header" class="page-section content-header">
+<div class="page-section-inner flex-container justify-between align-center">
+<div class="header-left">
+<h1 class="title">Themes</h1>
+<p class="title-description">Browse the community's custom made themes.</p>
+</div>
+<form class="header-right search-container">
+<svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+<input class="search" id="addon-search" type="text" placeholder="Type here to search" />
+<button class="search-clear-btn" type="reset">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="16" height="16">
+<path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+</button>
+</form>
+</div>
+</section>
+<div class="ad leaderboard_ros_atf" id="ad-container-1"></div>
+<script>
+
+    window.top.__vm_add = window.top.__vm_add || [];
+
+    //this is a x-browser way to make sure content has loaded.
+
+    (function (success) {
+        if (window.document.readyState !== "loading") {
+            success();
+        } else {
+            window.document.addEventListener("DOMContentLoaded", function () {
+                success();
+            });
+        }
+    })(function () {
+        var placement = document.createElement("div");
+        placement.setAttribute("class", "vm-placement");
+        if (window.innerWidth > 1000) {
+            //load desktop placement
+            placement.setAttribute("data-id", "60f8231bbd5b6c54cf47a3e5");
+        } else {
+            //load mobile placement
+            placement.setAttribute("data-id", "60f82374bd5b6c54cf47a3e7");
+        }
+        document.querySelector("#ad-container-1").appendChild(placement);
+        window.top.__vm_add.push(placement);
+    });
+
+</script>
+<section id="addons-controls" class="page-section">
+<div class="page-section-inner">
+<div id="addons-actions" class="flex-container align-center wrap">
+<div class="btn-container">
+<div class="menu-wrap">
+<button class="btn btn-secondary dropdown-btn sort-dropdown-btn" type="button">
+<svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+<path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path>
+</svg>
+<span>Sort By</span>
+</button>
+<div id="sort-dropdown" class="dropdown-menu">
+<div class="menu-item selected" id="sort-popular-item" tabindex="0">
+<span>Popular</span>
+<svg class="menu-control menu-radio" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"></path><circle cx="12" cy="12" r="5" class="menu-radio-circle" fill="currentColor"></circle></svg>
+</div>
+<div class="menu-item" id="sort-release-date-item" tabindex="0">
+<span>Release Date</span>
+<svg class="menu-control menu-radio" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"></path><circle cx="12" cy="12" r="5" class="menu-radio-circle" fill="currentColor"></circle></svg>
+</div>
+<div class="menu-item" id="sort-name-item" tabindex="0">
+<span>Name</span>
+<svg class="menu-control menu-radio" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"></path><circle cx="12" cy="12" r="5" class="menu-radio-circle" fill="currentColor"></circle></svg>
+</div>
+<div class="menu-item" id="sort-likes-item" tabindex="0">
+<span>Likes</span>
+<svg class="menu-control menu-radio" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"></path><circle cx="12" cy="12" r="5" class="menu-radio-circle" fill="currentColor"></circle></svg>
+</div>
+<div class="menu-item" id="sort-downloads-item" tabindex="0">
+<span>Downloads</span>
+<svg class="menu-control menu-radio" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"></path><circle cx="12" cy="12" r="5" class="menu-radio-circle" fill="currentColor"></circle></svg>
+</div>
+<div class="menu-item" id="sort-updated-item" tabindex="0">
+<span>Recently Updated</span>
+<svg class="menu-control menu-radio" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"></path><circle cx="12" cy="12" r="5" class="menu-radio-circle" fill="currentColor"></circle></svg>
+</div>
+</div>
+</div>
+<div class="menu-wrap">
+<button class="btn btn-secondary dropdown-btn tags-dropdown-btn" type="button">
+<svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+<path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+</svg>
+<span>Tags</span>
+</button>
+<div id="tags-dropdown" class="dropdown-menu">
+<div class="menu-item" tabindex="0">
+<span>flat</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>transparent</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>layout</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>customizable</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>fiction</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>nature</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>space</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>dark</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>light</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>game</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>anime</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>red</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>orange</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>green</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>purple</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>black</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>other</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>high-contrast</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>white</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>aqua</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>animated</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>yellow</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>blue</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+ <path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+<div class="menu-item" tabindex="0">
+<span>abstract</span>
+<svg class="menu-control menu-checkbox" aria-hidden="false" width="24" height="24" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.625 3H5.375C4.06519 3 3 4.06519 3 5.375V18.625C3 19.936 4.06519 21 5.375 21H18.625C19.936 21 21 19.936 21 18.625V5.375C21.0057 4.08803 19.9197 3 18.625 3ZM19 19V5H4.99999V19H19Z" class="menu-checkbox-outline" fill="currentColor"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.37499 3H18.625C19.9197 3 21.0056 4.08803 21 5.375V18.625C21 19.936 19.9359 21 18.625 21H5.37499C4.06518 21 3 19.936 3 18.625V5.375C3 4.06519 4.06518 3 5.37499 3Z" class="menu-checkbox-background" fill="currentColor"></path>
+<path d="M9.58473 14.8636L6.04944 11.4051L4.50003 12.9978L9.58473 18L19.5 8.26174L17.9656 6.64795L9.58473 14.8636Z" class="menu-control menu-checkbox-check" fill="currentColor"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<div class="disabled sign-in-gate">
+<a class="btn btn-primary" type="button">
+<svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+<path fill-rule="evenodd" d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z"></path>
+</svg>
+<span>Submit a theme</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section id="addons-content" class="page-section">
+<div class="page-section-inner">
+<div class="card-container"></div>
+<div class="spinner"></div>
+</div>
+</section>
+</main>
+<script src="/js/footer.js?v=fVibONE5ysI_4aLxlFO_HdBjR5h3blBjRZ-T8kwH5Sk" defer></script>
+<div class="footer-container">
+<img class="zere hide-mobile" loading="lazy" src="/resources/ui/techsupport.webp" alt="Easter egg" />
+<footer id="section-footer" class="page-section">
+<div class="page-section-inner">
+<section id="footer-top" class="flex-container hide-mobile">
+<div class="footer-column">
+<a class="footer-logo-wrap" href="/">
+<img class="footer-logo" loading="lazy" src="/resources/branding/logo_large.svg" alt="Footer logo" />
+</a>
+<input onkeyup="checkForEasterEgg()" id="easter-egg-input" class="footer-column-item" value="The Discord Enhancement Project" />
+</div>
+<div class="footer-column">
+<h3 class="footer-column-header">Community</h3>
+<a rel="noreferrer noopener" target="_blank" href="https://discord.gg/0Tmfo5ZbORCRqbAd" class="footer-column-item">
+<span>Discord</span>
+</a>
+<a rel="noreferrer noopener" target="_blank" href="https://twitter.com/_BetterDiscord_" class="footer-column-item">
+<span>Twitter</span>
+</a>
+<a rel="noreferrer noopener" target="_blank" href="https://github.com/BetterDiscord/BetterDiscord" class="footer-column-item">
+ <span>GitHub</span>
+</a>
+</div>
+<div class="footer-column">
+<h3 class="footer-column-header">Content</h3>
+<a href="/themes" class="footer-column-item">
+<span>Themes</span>
+</a>
+<a href="/plugins" class="footer-column-item">
+<span>Plugins</span>
+</a>
+<a href="/developers" class="footer-column-item">
+<span>Developers</span>
+</a>
+</div>
+<div class="footer-column">
+<h3 class="footer-column-header">Help</h3>
+<a href="https://betterdiscord.bsa-whitelabel.com/" class="footer-column-item">Advertise With Us</a>
+<a href="https://docs.betterdiscord.app/" target="_blank" class="footer-column-item">Documentation</a>
+<a href="/Privacy" class="footer-column-item">Privacy Policy</a>
+<a href="/cdn-cgi/l/email-protection#e48580898d8aa4868190908196808d97878b9680ca859494" class="footer-column-item">Contact Us</a>
+<a href="#" class="footer-column-item" onclick="displayPreferenceModal()">Cookie Preferences</a>
+</div>
+</section>
+<section id="footer-bottom" class="flex-container wrap align-center justify-between">
+<div class="hide-desktop flex-container wrap" id="footer-privacy-container">
+<div class="footer-privacy text-center">
+<a href="https://betterdiscord.bsa-whitelabel.com/" class="footer-privacy-item">Advertise With Us</a>
+<a href="/Privacy" class="footer-privacy-item">Privacy Policy</a>
+<a href="/cdn-cgi/l/email-protection#8beaefe6e2e5cbe9eeffffeef9efe2f8e8e4f9efa5eafbfb" class="footer-privacy-item">Contact Us</a>
+<a href="#" class="footer-privacy-item" onclick="displayPreferenceModal()">Cookie Preferences</a>
+</div>
+</div>
+<div class="flex-container wrap" id="footer-copyright-container">
+<div class="footer-copyright text-center">
+© 2015-2023
+<a class="anchor" rel="noreferrer noopener" target="_blank" href="https://github.com/BetterDiscord">BetterDiscord Team</a>
+</div>
+</div>
+<div id="footer-social-icons" class="flex-container justify-center wrap">
+<a rel="noreferrer noopener" target="_blank" href="https://twitter.com/_BetterDiscord_" class="social-icon twitter">
+<svg class="social-icon-inner" width="32" height="32" viewBox="0 0 20 16" aria-hidden="true">
+<g fill="none" fill-rule="evenodd">
+<path class="foreground-26ym5y da-foreground" fill="currentColor" d="M1,14.1538462 L1.95,14.1538462 C3.73125,14.1538462 5.5125,13.5384615 6.81875,12.4307692 C5.15625,12.4307692 3.73125,11.2 3.1375,9.6 C3.375,9.6 3.6125,9.72307692 3.85,9.72307692 C4.20625,9.72307692 4.5625,9.72307692 4.91875,9.6 C3.1375,9.23076923 1.7125,7.63076923 1.7125,5.66153846 C2.1875,5.90769231 2.78125,6.15384615 3.49375,6.15384615 C2.425,5.41538462 1.83125,4.18461538 1.83125,2.70769231 C1.83125,1.96923077 2.06875,1.23076923 2.30625,0.615384615 C4.20625,3.07692308 7.05625,4.67692308 10.38125,4.8 C10.2625,4.67692308 10.2625,4.30769231 10.2625,4.06153846 C10.2625,1.84615385 12.04375,0 14.18125,0 C15.25,0 16.31875,0.492307692 17.03125,1.23076923 C17.8625,1.10769231 18.8125,0.738461538 19.525,0.246153846 C19.2875,1.23076923 18.575,1.96923077 17.8625,2.46153846 C18.575,2.46153846 19.2875,2.21538462 20,1.84615385 C19.525,2.70769231 18.8125,3.32307692 18.1,3.93846154 L18.1,4.43076923 C18.1,9.84615385 14.18125,16 6.9375,16 C4.68125,16 2.6625,15.3846154 1,14.1538462 Z"></path>
+<rect width="32" height="32"></rect>
+</g>
+</svg>
+ </a>
+<a rel="noreferrer noopener" target="_blank" href="https://discord.gg/0Tmfo5ZbORCRqbAd" class="social-icon discord">
+<svg class="social-icon-inner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" width="26" height="26">
+<path fill="currentColor" fill-rule="evenodd" d="M20.222 0c1.406 0 2.54 1.137 2.607 2.475V24l-2.677-2.273l-1.47-1.338l-1.604-1.398l.67 2.205H3.71c-1.402 0-2.54-1.065-2.54-2.476V2.48C1.17 1.142 2.31.003 3.715.003h16.5L20.222 0zm-6.118 5.683h-.03l-.202.2c2.073.6 3.076 1.537 3.076 1.537c-1.336-.668-2.54-1.002-3.744-1.137c-.87-.135-1.74-.064-2.475 0h-.2c-.47 0-1.47.2-2.81.735c-.467.203-.735.336-.735.336s1.002-1.002 3.21-1.537l-.135-.135s-1.672-.064-3.477 1.27c0 0-1.805 3.144-1.805 7.02c0 0 1 1.74 3.743 1.806c0 0 .4-.533.805-1.002c-1.54-.468-2.14-1.404-2.14-1.404s.134.066.335.2h.06c.03 0 .044.015.06.03v.006c.016.016.03.03.06.03c.33.136.66.27.93.4a8.18 8.18 0 0 0 1.8.536c.93.135 1.996.2 3.21 0c.6-.135 1.2-.267 1.8-.535c.39-.2.87-.4 1.397-.737c0 0-.6.936-2.205 1.404c.33.466.795 1 .795 1c2.744-.06 3.81-1.8 3.87-1.726c0-3.87-1.815-7.02-1.815-7.02c-1.635-1.214-3.165-1.26-3.435-1.26l.056-.02zm.168 4.413c.703 0 1.27.6 1.27 1.335c0 .74-.57 1.34-1.27 1.34c-.7 0-1.27-.6-1.27-1.334c.002-.74.573-1.338 1.27-1.338zm-4.543 0c.7 0 1.266.6 1.266 1.335c0 .74-.57 1.34-1.27 1.34c-.7 0-1.27-.6-1.27-1.334c0-.74.57-1.338 1.27-1.338z" />
+</svg>
+</a>
+<a rel="noreferrer noopener" target="_blank" href="https://github.com/BetterDiscord/BetterDiscord/" class="social-icon github">
+<svg class="social-icon-inner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="26" height="26">
+<path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a>
+</div>
+</section>
+</div>
+</footer>
+</div>
+<link rel="stylesheet" href="/css/overlayScrollbars.min.css?v=O2pCLRUtp_LLSWw6pJnoFU0x-p02SVp57AvtCn9PWwo" />
+<link rel="stylesheet" href="/css/tagify.min.css?v=U4Q668rIyooggxgIS_bH4z9IeHikIbCQfxSR7Usv8Gw" />
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/vendor/popper.min.js?v=GLgOQLuTrl-PHTJTsD2OXVW1E0GifteM9C_q3QErz58"></script>
+<script src="/js/vendor/tippy-bundle.umd.min.js?v=wj2Cg4b26_DzTSJbD0xJnCDkhMxXlR4cTJyGVgo5XdY"></script>
+<script>
+    tippy('.sign-in-gate', {
+        content: 'You must sign in to perform this action.',
+        theme: 'default',
+    });
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7bc13b4c78210772","version":"2023.3.0","r":1,"token":"5a42eaf24d2a4ecf87c4205b7ebeb78c","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
